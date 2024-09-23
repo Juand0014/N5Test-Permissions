@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using PermissionsAPI.CQRS.Commands;
 using PermissionsAPI.CQRS.Queries;
 using PermissionsAPI.Data;
+using PermissionsAPI.Kafka;
+using PermissionsAPI.Kafka.Interfaces;
 using PermissionsAPI.Models;
 using PermissionsAPI.Repositories;
 using PermissionsAPI.Repositories.Permission;
@@ -9,6 +11,9 @@ using PermissionsAPI.Services.Permission;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowPolicy = "Permission";
+
+// Register KafkaSetting with IOptions pattern
+builder.Services.Configure<KafkaSettings>(builder.Configuration.GetSection("KafkaSettings"));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -18,6 +23,11 @@ builder.Services.AddSwaggerGen();
 // Inject Database
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// REGISTERS
+
+//Kafka Producer
+builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 
 // Repositorios
 builder.Services.AddScoped<IPermissionRepository, PermissionRepository>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\codes\\M5Project\\PermissionsAPI\\PermissionsAPI.csproj": {}
+    "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj": {}
   },
   "projects": {
-    "D:\\codes\\M5Project\\PermissionsAPI\\PermissionsAPI.csproj": {
+    "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\codes\\M5Project\\PermissionsAPI\\PermissionsAPI.csproj",
+        "projectUniqueName": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj",
         "projectName": "PermissionsAPI",
-        "projectPath": "D:\\codes\\M5Project\\PermissionsAPI\\PermissionsAPI.csproj",
+        "projectPath": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj",
         "packagesPath": "C:\\Users\\Juand\\.nuget\\packages\\",
-        "outputPath": "D:\\codes\\M5Project\\PermissionsAPI\\obj\\",
+        "outputPath": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.4, )"

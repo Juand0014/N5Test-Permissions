@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PermissionsAPI.CQRS.Commands;
 using PermissionsAPI.CQRS.Queries;
-using PermissionsAPI.Models;
+using PermissionsAPI.Kafka.Dto;
+using PermissionsAPI.Kafka.Interfaces;
 using PermissionsAPI.Services.Permission;
 
 namespace PermissionsAPI.Controllers;
@@ -12,11 +13,13 @@ public class PermissionController : ControllerBase
 {
     private readonly CommandHandler commandHandler;
     private readonly QueryHandler queryHandler;
+    private readonly IKafkaProducer kafkaProducer;
 
-    public PermissionController(IPermissionService permissionService, CommandHandler commandHandler, QueryHandler queryHandler)
+    public PermissionController(IPermissionService permissionService, CommandHandler commandHandler, QueryHandler queryHandler, IKafkaProducer kafkaProducer)
     {
         this.commandHandler = commandHandler;
         this.queryHandler = queryHandler;
+        this.kafkaProducer = kafkaProducer;
     }
 
     [HttpPost]
@@ -25,6 +28,10 @@ public class PermissionController : ControllerBase
         if (ModelState.IsValid)
         {
             await commandHandler.Handle(command);
+
+            var kafkaMessage = new KafkaMessageDTO("Create permission");
+            await kafkaProducer.SendMessageAsync("permissions-topic", kafkaMessage.Id.ToString(), kafkaMessage.Name);
+
             return Ok();
         }
         return BadRequest(ModelState);
@@ -35,6 +42,10 @@ public class PermissionController : ControllerBase
     {
         command.Id = id;
         await commandHandler.Handle(command);
+
+        var kafkaMessage = new KafkaMessageDTO("Modify Permission");
+        await kafkaProducer.SendMessageAsync("permissions-topic", kafkaMessage.Id.ToString(), kafkaMessage.Name);
+
         return NoContent();
     }
 
@@ -42,6 +53,10 @@ public class PermissionController : ControllerBase
     public async Task<IActionResult> GetPermissions()
     {
         var permissions = await queryHandler.Handle(new GetPermissionsQuery());
+
+        var kafkaMessage = new KafkaMessageDTO("Get Permissions");
+        await kafkaProducer.SendMessageAsync("permissions-topic", kafkaMessage.Id.ToString(), kafkaMessage.Name);
+
         return Ok(permissions);
     }
 }

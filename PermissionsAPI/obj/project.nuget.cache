@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "yiWcce5YeFiV7hWryUPI0/O6LVR7MagQUfhdE+lMNXhkvrCbtxtdLQJvGcx5GPlezaHj7bnG7fak9IPIpf4VHg==",
+  "dgSpecHash": "8wjQ8NEJLgpC75S8LAl/p5sNmPb8ekxiLAUtBAJj8cA/cR6FRUsfmof0m4uPfEBrF0VBJLnnmKXiM/uoBYd8GA==",
   "success": true,
-  "projectFilePath": "D:\\codes\\M5Project\\PermissionsAPI\\PermissionsAPI.csproj",
+  "projectFilePath": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juand\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Juand\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Juand\\.nuget\\packages\\confluent.kafka\\2.5.3\\confluent.kafka.2.5.3.nupkg.sha512",
     "C:\\Users\\Juand\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Juand\\.nuget\\packages\\librdkafka.redist\\2.5.3\\librdkafka.redist.2.5.3.nupkg.sha512",
     "C:\\Users\\Juand\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "C:\\Users\\Juand\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Juand\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
