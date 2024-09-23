@@ -300,3 +300,5 @@ D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\obj\Debug\net8.0\refint\Per
 D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\obj\Debug\net8.0\PermissionsAPI.pdb
 D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\obj\Debug\net8.0\PermissionsAPI.genruntimeconfig.cache
 D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\obj\Debug\net8.0\ref\PermissionsAPI.dll
+D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\bin\Debug\net8.0\Elasticsearch.Net.dll
+D:\codes\M5Project\N5Test-Permissions\PermissionsAPI\bin\Debug\net8.0\Nest.dll

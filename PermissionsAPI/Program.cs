@@ -2,15 +2,22 @@ using Microsoft.EntityFrameworkCore;
 using PermissionsAPI.CQRS.Commands;
 using PermissionsAPI.CQRS.Queries;
 using PermissionsAPI.Data;
+using PermissionsAPI.ElasticSearch.Interfaces;
+using PermissionsAPI.ElasticSearch;
 using PermissionsAPI.Kafka;
 using PermissionsAPI.Kafka.Interfaces;
 using PermissionsAPI.Models;
 using PermissionsAPI.Repositories;
 using PermissionsAPI.Repositories.Permission;
-using PermissionsAPI.Services.Permission;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowPolicy = "Permission";
+
+// Configurar Elasticsearch Settings
+builder.Services.Configure<ElasticsearchSettings>(builder.Configuration.GetSection("ElasticsearchSettings"));
+
+// Registrar el servicio de Elasticsearch
+builder.Services.AddScoped<IElasticsearchService, ElasticsearchService>();
 
 // Register KafkaSetting with IOptions pattern
 builder.Services.Configure<KafkaSettings>(builder.Configuration.GetSection("KafkaSettings"));
@@ -41,9 +48,6 @@ builder.Services.AddScoped<QueryHandler>();
 
 // UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-// Servicios
-builder.Services.AddScoped<IPermissionService, PermissionService>();
 
 // Allows CORS origins
 builder.Services.AddCors(option =>

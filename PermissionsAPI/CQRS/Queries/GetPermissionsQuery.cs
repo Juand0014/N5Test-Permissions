@@ -1,4 +1,5 @@
-﻿namespace PermissionsAPI.CQRS.Queries
+﻿
+namespace PermissionsAPI.CQRS.Queries
 {
     public class GetPermissionsQuery
     {
