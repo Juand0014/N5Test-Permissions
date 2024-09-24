@@ -1,0 +1,9 @@
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.csproj.AssemblyReference.cache
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\MvcTestingAppManifest.json
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.AssemblyInfoInputs.cache
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.AssemblyInfo.cs
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.csproj.CoreCompileInputs.cache
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.MvcApplicationPartsAssemblyInfo.cs
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.MvcApplicationPartsAssemblyInfo.cache
+D:\codes\M5Project\N5Test-Permissions\Permissions.Tests\obj\Debug\net8.0\Permissions.Tests.sourcelink.json

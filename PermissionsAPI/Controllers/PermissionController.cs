@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Nest;
 using PermissionsAPI.CQRS.Commands;
 using PermissionsAPI.CQRS.Queries;
-using PermissionsAPI.ElasticSearch.Interfaces;
-using PermissionsAPI.Kafka.Dto;
-using PermissionsAPI.Kafka.Interfaces;
+using System.Threading.Tasks;
 
 namespace PermissionsAPI.Controllers;
 
@@ -14,7 +13,7 @@ public class PermissionController : ControllerBase
     private readonly CommandHandler commandHandler;
     private readonly QueryHandler queryHandler;
 
-    public PermissionController(CommandHandler commandHandler, QueryHandler queryHandler, IKafkaProducer kafkaProducer, IElasticsearchService elasticsearchService)
+    public PermissionController(CommandHandler commandHandler, QueryHandler queryHandler)
     {
         this.commandHandler = commandHandler;
         this.queryHandler = queryHandler;

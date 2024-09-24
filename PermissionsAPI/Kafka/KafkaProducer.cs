@@ -1,6 +1,8 @@
 ﻿using Confluent.Kafka;
 using Microsoft.Extensions.Options;
 using PermissionsAPI.Kafka.Interfaces;
+using System;
+using System.Threading.Tasks;
 
 namespace PermissionsAPI.Kafka;
 

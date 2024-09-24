@@ -1,4 +1,7 @@
-﻿namespace PermissionsAPI.Repositories;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace PermissionsAPI.Repositories;
 
 public interface IRepository<T> where T : class
 {

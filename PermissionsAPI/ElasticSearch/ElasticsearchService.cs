@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using Nest;
 using PermissionsAPI.ElasticSearch.Interfaces;
+using System;
+using System.Threading.Tasks;
 
 namespace PermissionsAPI.ElasticSearch;
 

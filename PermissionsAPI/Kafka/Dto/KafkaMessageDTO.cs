@@ -1,4 +1,6 @@
-﻿namespace PermissionsAPI.Kafka.Dto;
+﻿using System;
+
+namespace PermissionsAPI.Kafka.Dto;
 
 public class KafkaMessageDTO
 {

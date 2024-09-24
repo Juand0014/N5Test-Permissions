@@ -1,4 +1,6 @@
-﻿namespace PermissionsAPI.Kafka.Interfaces;
+﻿using System.Threading.Tasks;
+
+namespace PermissionsAPI.Kafka.Interfaces;
 
 public interface IKafkaProducer
 {

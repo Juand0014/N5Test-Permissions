@@ -3,20 +3,126 @@
   "WorkspaceRootPath": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\controllers\\permissionscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\commands\\permissioncommandhanldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\commands\\addpermissioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\commands\\addpermissioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\queries\\queryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\queries\\queryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\elasticsearch\\elasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\elasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\queries\\getpermissionsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\queries\\getpermissionsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\elasticsearch\\permissionindexmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\permissionindexmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\elasticsearch\\interfaces\\ielasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\interfaces\\ielasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\queries\\getpermissionstypebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\queries\\getpermissionstypebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\queries\\permissionsqueryhandlertestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\permission\\permissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\permission\\permissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\permission\\ipermissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\permission\\ipermissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\data\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:data\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\commands\\modifypermisioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\commands\\modifypermisioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\models\\permissiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:models\\permissiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\integrationtest\\permissionscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\kafka\\dto\\kafkamessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:kafka\\dto\\kafkamessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\kafka\\interfaces\\ikafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:kafka\\interfaces\\ikafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\elasticsearch\\elasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\elasticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\permissionsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:permissionsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915F33BA-F73E-450A-BFD1-D2978E3B4A4C}|..\\Permissions.Tests\\Permissions.Tests.csproj|d:\\codes\\m5project\\n5test-permissions\\permissions.tests\\permissions.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\constant\\appconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,52 +133,8 @@
       "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\elasticsearchsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\permission\\permissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\permission\\permissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\elasticsearch\\permissionindexmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:elasticsearch\\permissionindexmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\kafka\\kafkasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:kafka\\kafkasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\permission\\ipermissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\permission\\ipermissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\cqrs\\queries\\getpermissionsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:cqrs\\queries\\getpermissionsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|solutionrelative:data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF89F91F-DF87-4DA7-B63E-B944436F343D}|PermissionsAPI.csproj|d:\\codes\\m5project\\n5test-permissions\\permissionsapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,76 +148,440 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Common\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Common\\NotFoundException.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Common\\NotFoundException.cs",
+              "RelativeToolTip": "Common\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T20:17:31.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QueryHandler.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\QueryHandler.cs",
+              "RelativeDocumentMoniker": "CQRS\\Queries\\QueryHandler.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\QueryHandler.cs",
+              "RelativeToolTip": "CQRS\\Queries\\QueryHandler.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAMwD0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:26:22.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAMwCgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:23:00.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppConstant.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Constant\\AppConstant.cs",
-              "RelativeDocumentMoniker": "Constant\\AppConstant.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Constant\\AppConstant.cs",
-              "RelativeToolTip": "Constant\\AppConstant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAYAAAA",
+              "Title": "CommandHandler.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\CommandHandler.cs",
+              "RelativeDocumentMoniker": "CQRS\\Commands\\CommandHandler.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\CommandHandler.cs",
+              "RelativeToolTip": "CQRS\\Commands\\CommandHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAMwBsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T04:11:32.816Z",
+              "WhenOpened": "2024-09-23T02:50:49.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "Repositories\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "GetPermissionsQuery.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsQuery.cs",
+              "RelativeDocumentMoniker": "CQRS\\Queries\\GetPermissionsQuery.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsQuery.cs",
+              "RelativeToolTip": "CQRS\\Queries\\GetPermissionsQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:26:03.01Z",
+              "WhenOpened": "2024-09-23T03:26:20.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "PermissionController.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Controllers\\PermissionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PermissionController.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Controllers\\PermissionController.cs",
+              "RelativeToolTip": "Controllers\\PermissionController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T18:36:34.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PermissionCommandHanlderTests.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Commands\\PermissionCommandHanlderTests.cs",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\Commands\\PermissionCommandHanlderTests.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Commands\\PermissionCommandHanlderTests.cs",
+              "RelativeToolTip": "..\\Permissions.Tests\\Commands\\PermissionCommandHanlderTests.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:26:15.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PermissionsControllerTests.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Controllers\\PermissionsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\Controllers\\PermissionsControllerTests.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Controllers\\PermissionsControllerTests.cs",
+              "RelativeToolTip": "..\\Permissions.Tests\\Controllers\\PermissionsControllerTests.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAMwDgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:27:51.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T03:25:37.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PermissionIndexModel.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\PermissionIndexModel.cs",
               "RelativeDocumentMoniker": "ElasticSearch\\PermissionIndexModel.cs",
               "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\PermissionIndexModel.cs",
               "RelativeToolTip": "ElasticSearch\\PermissionIndexModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T02:51:54.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
+              "Title": "IElasticsearchService.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\Interfaces\\IElasticsearchService.cs",
+              "RelativeDocumentMoniker": "ElasticSearch\\Interfaces\\IElasticsearchService.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\Interfaces\\IElasticsearchService.cs",
+              "RelativeToolTip": "ElasticSearch\\Interfaces\\IElasticsearchService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:02:45.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetPermissionsTypeByIdQuery.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsTypeByIdQuery.cs",
+              "RelativeDocumentMoniker": "CQRS\\Queries\\GetPermissionsTypeByIdQuery.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsTypeByIdQuery.cs",
+              "RelativeToolTip": "CQRS\\Queries\\GetPermissionsTypeByIdQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T19:32:26.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddPermissionCommand.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\AddPermissionCommand.cs",
+              "RelativeDocumentMoniker": "CQRS\\Commands\\AddPermissionCommand.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\AddPermissionCommand.cs",
+              "RelativeToolTip": "CQRS\\Commands\\AddPermissionCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:04:39.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PermissionsQueryHandlerTestes.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Queries\\PermissionsQueryHandlerTestes.cs",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\Queries\\PermissionsQueryHandlerTestes.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Queries\\PermissionsQueryHandlerTestes.cs",
+              "RelativeToolTip": "..\\Permissions.Tests\\Queries\\PermissionsQueryHandlerTestes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:28:18.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PermissionRepository.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\PermissionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Permission\\PermissionRepository.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\PermissionRepository.cs",
+              "RelativeToolTip": "Repositories\\Permission\\PermissionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:25:59.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPermissionRepository.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\IPermissionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Permission\\IPermissionRepository.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\IPermissionRepository.cs*",
+              "RelativeToolTip": "Repositories\\Permission\\IPermissionRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:26:01.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Data\\IUnitOfWork.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\IUnitOfWork.cs",
+              "RelativeToolTip": "Data\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:25:50.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Data\\UnitOfWork.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\UnitOfWork.cs",
+              "RelativeToolTip": "Data\\UnitOfWork.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:37:56.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:26:03.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Permission.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Models\\Permission.cs",
               "RelativeDocumentMoniker": "Models\\Permission.cs",
               "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Models\\Permission.cs",
               "RelativeToolTip": "Models\\Permission.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T02:49:03.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
+              "Title": "PermissionType.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Models\\PermissionType.cs",
+              "RelativeDocumentMoniker": "Models\\PermissionType.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Models\\PermissionType.cs",
+              "RelativeToolTip": "Models\\PermissionType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T17:57:07.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Repository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:26:02.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ModifyPermisionCommand.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\ModifyPermisionCommand.cs",
+              "RelativeDocumentMoniker": "CQRS\\Commands\\ModifyPermisionCommand.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\ModifyPermisionCommand.cs",
+              "RelativeToolTip": "CQRS\\Commands\\ModifyPermisionCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:35:00.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\UnitTest1.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Permissions.Tests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:28:33.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PermissionsControllerIntegrationTests.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\IntegrationTest\\PermissionsControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\IntegrationTest\\PermissionsControllerIntegrationTests.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\IntegrationTest\\PermissionsControllerIntegrationTests.cs",
+              "RelativeToolTip": "..\\Permissions.Tests\\IntegrationTest\\PermissionsControllerIntegrationTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:28:09.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-23T23:17:03.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "KafkaMessageDTO.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\Dto\\KafkaMessageDTO.cs",
+              "RelativeDocumentMoniker": "Kafka\\Dto\\KafkaMessageDTO.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\Dto\\KafkaMessageDTO.cs",
+              "RelativeToolTip": "Kafka\\Dto\\KafkaMessageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:27:45.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IKafkaProducer.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\Interfaces\\IKafkaProducer.cs",
+              "RelativeDocumentMoniker": "Kafka\\Interfaces\\IKafkaProducer.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\Interfaces\\IKafkaProducer.cs",
+              "RelativeToolTip": "Kafka\\Interfaces\\IKafkaProducer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:26:11.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ElasticsearchService.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\ElasticsearchService.cs",
+              "RelativeDocumentMoniker": "ElasticSearch\\ElasticsearchService.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\ElasticsearchService.cs",
+              "RelativeToolTip": "ElasticSearch\\ElasticsearchService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:02:53.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "KafkaProducer.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\KafkaProducer.cs",
               "RelativeDocumentMoniker": "Kafka\\KafkaProducer.cs",
               "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\KafkaProducer.cs",
               "RelativeToolTip": "Kafka\\KafkaProducer.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T03:26:05.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 30,
+              "Title": "PermissionsAPI.csproj",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj",
+              "RelativeDocumentMoniker": "PermissionsAPI.csproj",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\PermissionsAPI.csproj*",
+              "RelativeToolTip": "PermissionsAPI.csproj*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-23T21:33:18.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Permissions.Tests.csproj",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Permissions.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\Permissions.Tests\\Permissions.Tests.csproj",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\Permissions.Tests\\Permissions.Tests.csproj",
+              "RelativeToolTip": "..\\Permissions.Tests\\Permissions.Tests.csproj",
+              "ViewState": "AQIAABUAAAAAAAAAAAAxwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-23T22:23:29.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AppConstant.cs",
+              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Constant\\AppConstant.cs",
+              "RelativeDocumentMoniker": "Constant\\AppConstant.cs",
+              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Constant\\AppConstant.cs",
+              "RelativeToolTip": "Constant\\AppConstant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T04:11:32.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ElasticsearchSettings.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\ElasticsearchSettings.cs",
               "RelativeDocumentMoniker": "ElasticSearch\\ElasticsearchSettings.cs",
@@ -168,72 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CommandHandler.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\CommandHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\Commands\\CommandHandler.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Commands\\CommandHandler.cs",
-              "RelativeToolTip": "CQRS\\Commands\\CommandHandler.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAMwFIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T02:50:49.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QueryHandler.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\QueryHandler.cs",
-              "RelativeDocumentMoniker": "CQRS\\Queries\\QueryHandler.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\QueryHandler.cs",
-              "RelativeToolTip": "CQRS\\Queries\\QueryHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAMwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:26:22.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IElasticsearchService.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\Interfaces\\IElasticsearchService.cs",
-              "RelativeDocumentMoniker": "ElasticSearch\\Interfaces\\IElasticsearchService.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\Interfaces\\IElasticsearchService.cs",
-              "RelativeToolTip": "ElasticSearch\\Interfaces\\IElasticsearchService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:02:45.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElasticsearchService.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\ElasticsearchService.cs",
-              "RelativeDocumentMoniker": "ElasticSearch\\ElasticsearchService.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\ElasticSearch\\ElasticsearchService.cs",
-              "RelativeToolTip": "ElasticSearch\\ElasticsearchService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:02:53.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:23:00.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "KafkaSettings.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Kafka\\KafkaSettings.cs",
               "RelativeDocumentMoniker": "Kafka\\KafkaSettings.cs",
@@ -246,85 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-23T03:25:37.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PermissionRepository.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\PermissionRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Permission\\PermissionRepository.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\PermissionRepository.cs",
-              "RelativeToolTip": "Repositories\\Permission\\PermissionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:25:59.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IPermissionRepository.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\IPermissionRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Permission\\IPermissionRepository.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Permission\\IPermissionRepository.cs",
-              "RelativeToolTip": "Repositories\\Permission\\IPermissionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:26:01.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Repositories\\Repository.cs",
-              "RelativeToolTip": "Repositories\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:26:02.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GetPermissionsQuery.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsQuery.cs",
-              "RelativeDocumentMoniker": "CQRS\\Queries\\GetPermissionsQuery.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\CQRS\\Queries\\GetPermissionsQuery.cs",
-              "RelativeToolTip": "CQRS\\Queries\\GetPermissionsQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:26:20.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Data\\UnitOfWork.cs",
-              "ToolTip": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\UnitOfWork.cs",
-              "RelativeToolTip": "Data\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:37:56.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 35,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\codes\\M5Project\\N5Test-Permissions\\PermissionsAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
