@@ -1,5 +1,6 @@
 version: '3'
 services:
+
   zookeeper:
     image: confluentinc/cp-zookeeper:7.7.1
     container_name: zookeeper
@@ -19,7 +20,7 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
@@ -44,3 +45,30 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200
     ports:
       - "5601:5601"
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password1*
+    ports:
+      - "1433:1433"
+
+  backend:
+      build:
+        context: .
+        dockerfile: PermissionsAPI/Dockerfile
+      environment:
+        - MSSQL_SA_PASSWORD=Password1*
+        - ASPNETCORE_ENVIRONMENT=Development
+        - BOOTSTRAP_SERVERS=kafka:9092
+      ports:
+        - "5000:8080"
+      depends_on:
+        - kafka
+        - kibana
+        - sqlserver
+
+# Volúmenes persistentes para SQL Server
+volumes:
+  sqlserver_data:
