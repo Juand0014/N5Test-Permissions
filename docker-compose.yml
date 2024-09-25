@@ -9,6 +9,8 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     ports:
       - "2181:2181"
+    networks:
+      - app-network
 
   kafka:
     image: confluentinc/cp-kafka:7.7.1
@@ -25,16 +27,20 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - app-network
 
   elasticsearch:
-      image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
-      container_name: elasticsearch
-      environment:
-        - discovery.type=single-node
-        - xpack.security.enabled=false
-      ports:
-        - "9200:9200"
-        - "9300:9300"
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - app-network
         
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.0
@@ -45,6 +51,8 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200
     ports:
       - "5601:5601"
+    networks:
+      - app-network
 
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
@@ -53,41 +61,41 @@ services:
       - MSSQL_SA_PASSWORD=Password1*
     ports:
       - "1433:1433"
+    networks:
+      - app-network
 
   backend:
-      build:
-        context: .
-        dockerfile: PermissionsAPI/Dockerfile
-      environment:
-        - MSSQL_SA_PASSWORD=Password1*
-        - ASPNETCORE_ENVIRONMENT=Development
-        - BOOTSTRAP_SERVERS=kafka:9092
-      ports:
-        - "5000:8080"
-      depends_on:
-        - kafka
-        - kibana
-        - sqlserver
-      networks:
-        - app-network
+    build:
+      context: .
+      dockerfile: PermissionsAPI/Dockerfile
+    restart: always
+    environment:
+      - MSSQL_SA_PASSWORD=Password1*
+      - ASPNETCORE_ENVIRONMENT=Development
+      - BOOTSTRAP_SERVERS=kafka:9092
+    ports:
+      - "5000:8080"
+    depends_on:
+      - sqlserver
+      - kafka
+      - kibana
+    networks:
+      - app-network
 
   frontend:
-      build:
-        context: .
-        dockerfile: PermissionsApp/Dockerfile
-      restart: always
-      environment:
-        - VITE_API_URL=http:backend:5000
-      ports:
-        - "3000:3000"
-      depends_on:
-        - backend
-      networks:
-        - app-network
+    build:
+      context: ./PermissionsApp
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_URL: 'http://backend:5000/api'
+    depends_on:
+      - backend
+    networks:
+      - app-network
 
 networks:
   app-network:
     driver: bridge
-    
-volumes:
-  sqlserver_data:
