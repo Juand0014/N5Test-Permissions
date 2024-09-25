@@ -36,9 +36,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Inject Database
-//var password = Environment.GetEnvironmentVariable("MSSQL_SA_PASSWORD");
+var password = Environment.GetEnvironmentVariable("MSSQL_SA_PASSWORD");
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//connectionString = string.Format(connectionString, password);
+connectionString = string.Format(connectionString, password);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseSqlServer(connectionString));
