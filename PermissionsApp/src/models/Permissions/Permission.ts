@@ -1,10 +1,10 @@
 import { PermissionType } from ".";
 
 export interface Permission {
-	id: number;
+	id: string | null;
 	nombreEmpleado: string;
 	apellidoEmpleado: string;
 	fechaPermiso: string;
-	tipoPermiso: number;
+	tipoPermiso?: number | null;
 	permissionType?: PermissionType;
 }

@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using Nest;
 using PermissionsAPI.CQRS.Commands;
 using PermissionsAPI.CQRS.Queries;
+using System;
+using System.Security;
 using System.Threading.Tasks;
 
 namespace PermissionsAPI.Controllers;
@@ -12,11 +15,13 @@ public class PermissionController : ControllerBase
 {
     private readonly CommandHandler commandHandler;
     private readonly QueryHandler queryHandler;
+    private readonly IMediator mediator;
 
-    public PermissionController(CommandHandler commandHandler, QueryHandler queryHandler)
+    public PermissionController(CommandHandler commandHandler, QueryHandler queryHandler, IMediator mediator)
     {
         this.commandHandler = commandHandler;
         this.queryHandler = queryHandler;
+        this.mediator = mediator;
     }
 
     [HttpPost]
@@ -24,18 +29,38 @@ public class PermissionController : ControllerBase
     {
         if (ModelState.IsValid)
         {
-            await commandHandler.Handle(command);
-            return Ok();
+            try
+            {
+                var result = await commandHandler.Handle(command);
+                return Ok(new { message = $"Element Added {result}" });
+
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                throw new Exception(ex.Message.ToString(),ex);
+            }
         }
         return BadRequest(ModelState);
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> ModifyPermission(int id, [FromBody] ModifyPermissionCommand command)
+    public async Task<IActionResult> ModifyPermission(Guid id, [FromBody] ModifyPermissionCommand command)
     {
         command.Id = id;
-        await commandHandler.Handle(command);
-        return NoContent();
+        var result = await commandHandler.Handle(command);
+        return Ok(new
+        {
+            message = $"Modified with Id: {id}",
+            model = result
+        });
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetPermissionById(Guid id)
+    {
+        var query = new GetPermissionByIdQuery((Guid)id);
+        var result = await mediator.Send(query);
+        return Ok(result);
     }
 
     [HttpGet]

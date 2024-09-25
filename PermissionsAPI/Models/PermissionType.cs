@@ -1,7 +1,9 @@
-﻿namespace PermissionsAPI.Models;
+﻿using System;
+
+namespace PermissionsAPI.Models;
 
 public class PermissionType
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     public required string Description { get; set; }
 }

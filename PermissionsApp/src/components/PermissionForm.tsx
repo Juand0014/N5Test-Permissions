@@ -1,119 +1,131 @@
 import { Button, Container, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Permission, PermissionType } from "../models";
-import { http } from "../services/services";
+import { http } from "../services";
+import { v4 as uuid } from "uuid";
 
 const PermissionForm: React.FC = () => {
+    const [permissionData, setPermissionData] = useState<Permission>({
+        id: uuid(),
+        nombreEmpleado: "",
+        apellidoEmpleado: "",
+        fechaPermiso: "",
+        tipoPermiso: null,
+        permissionType: {
+            id: 0,
+            description: null,
+        },
+    });
 
-	const [ permissionData, setPermission ] = useState<Permission>({
-		id:0,
-		nombreEmpleado:'',
-		apellidoEmpleado:'',
-		fechaPermiso:'',
-		tipoPermiso:0,
-		permissionType: {
-			id: 0,
-			description: null
-		}
-	})
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const { name, value } = e.target;
-		if (name === 'description') {
-			setPermission((prevData) => ({
-				...prevData,
-				permissionType: {
-					...prevData.permissionType,
-					description: value, 
-				} as PermissionType,
-			}));
-		}else{
-			setPermission({
-				...permissionData,
-				[name]: value
-			})
-		}
-	}
+        setPermissionData((prevData) => {
+            if (name === "description") {
+                return {
+                    ...prevData,
+                    permissionType: {
+                        ...prevData.permissionType,
+                        description: value,
+                    } as PermissionType,
+                };
+            }
+            return { ...prevData, [name]: value };
+        });
+    };
 
-	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		try{
-			permissionData.tipoPermiso = Number(permissionData.tipoPermiso);
-			if(permissionData.permissionType?.description == null) delete permissionData.permissionType;
-			else permissionData.permissionType.id = permissionData.tipoPermiso;
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
-			await http.post('/Permission', permissionData);
+        try {
+            const permissionPayload = {
+                ...permissionData,
+                tipoPermiso: permissionData.tipoPermiso
+                    ? Number(permissionData.tipoPermiso)
+                    : undefined,
+                permissionType: permissionData.permissionType?.description
+                    ? permissionData.permissionType
+                    : undefined,
+            };
 
-		}catch(error){
-			console.log(error);
-		}
-	}
+            await http.post("/Permission", permissionPayload);
+            console.log("Permiso creado con éxito");
+        } catch (error) {
+            console.error("Error al crear el permiso:", error);
+        }
+    };
 
-	return (
-		<Container>
-			<form onSubmit={handleSubmit}>
-				<TextField
-					label="Name"
-					name="nombreEmpleado"
-					value={permissionData.nombreEmpleado || ''}
-					onChange={handleChange}
-					variant="outlined"
-					fullWidth
-					margin="normal"
-					required
-				/>
+    const showTipoPermisoInput = !permissionData.permissionType?.description;
+    const showDescriptionInput = !permissionData.tipoPermiso;
 
-				<TextField
-					label="Apellido"
-					name="apellidoEmpleado"
-					value={permissionData.apellidoEmpleado || ''}
-					onChange={handleChange}
-					variant="outlined"
-					fullWidth
-					margin="normal"
-					required
-				/>
+    return (
+        <Container>
+            <form onSubmit={handleSubmit}>
+                <TextField
+                    label="Nombre"
+                    name="nombreEmpleado"
+                    value={permissionData.nombreEmpleado}
+                    onChange={handleChange}
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    required
+                />
 
-				<TextField
-					label="Fecha"
-					name="fechaPermiso"
-					value={permissionData.fechaPermiso || ''}
-					onChange={handleChange}
-					type="date"
-					variant="outlined"
-					fullWidth
-					margin="normal"
-					required
-				/>
+                <TextField
+                    label="Apellido"
+                    name="apellidoEmpleado"
+                    value={permissionData.apellidoEmpleado}
+                    onChange={handleChange}
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    required
+                />
 
-				<TextField
-					label="Tipo de Permiso"
-					name="tipoPermiso"
-					value={permissionData.tipoPermiso}
-					onChange={handleChange}
-					variant="outlined"
-					fullWidth
-					margin="normal"
-					type="number"
-				/>
+                <TextField
+                    label="Fecha"
+                    name="fechaPermiso"
+                    value={permissionData.fechaPermiso}
+                    onChange={handleChange}
+                    type="date"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    required
+                />
 
-				<TextField
-					label="Nuevo tipo de permiso"
-					name="description"
-					value={permissionData.permissionType?.description}
-					onChange={handleChange}
-					variant="outlined"
-					fullWidth
-					margin="normal"
-				/>
+                {showTipoPermisoInput && (
+                    <TextField
+                        label="Tipo de Permiso"
+                        name="tipoPermiso"
+                        value={permissionData.tipoPermiso || ""}
+                        onChange={handleChange}
+                        variant="outlined"
+                        fullWidth
+                        margin="normal"
+                        type="number"
+                    />
+                )}
 
-				<Button type="submit" variant="contained" color="primary">
-					Crear Permiso
-				</Button>
-					
-			</form>
-		</Container>
-	);
-}
+                {showDescriptionInput && (
+                    <TextField
+                        label="Nuevo tipo de permiso"
+                        name="description"
+                        value={permissionData.permissionType?.description || ""}
+                        onChange={handleChange}
+                        variant="outlined"
+                        fullWidth
+                        margin="normal"
+                    />
+                )}
+
+                <Button type="submit" variant="contained" color="primary">
+                    Crear Permiso
+                </Button>
+            </form>
+        </Container>
+    );
+};
 
 export default PermissionForm;

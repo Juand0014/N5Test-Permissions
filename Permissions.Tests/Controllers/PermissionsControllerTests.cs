@@ -13,6 +13,7 @@ using PermissionsAPI.Kafka;
 using PermissionsAPI.Kafka.Interfaces;
 using PermissionsAPI.Models;
 using PermissionsAPI.Repositories.Permission;
+using System;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -68,13 +69,13 @@ public class PermissionsControllerTests
         );
 
         // Crear una instancia del controlador inyectando el CommandHandler real
-        var controller = new PermissionController(commandHandler, queryHandler);
+        var controller = new PermissionController(commandHandler, queryHandler, mediator.Object);
 
         // Crear un comando de prueba válido
         var command = new AddPermissionCommand
         {
             ApellidoEmpleado = "Perez",
-            TipoPermiso = 15
+            TipoPermiso = Guid.NewGuid()
         };
 
         // Act: Ejecutar el método Post del controlador

@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace PermissionsAPI.CQRS.Queries;
 
-public class QueryHandler : IRequestHandler<GetPermissionsTypeByIdQuery, PermissionType>
+public class QueryHandler : IRequestHandler<GetPermissionByIdQuery, PermissionEntity>
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IKafkaProducer kafkaProducer;
@@ -41,7 +41,7 @@ public class QueryHandler : IRequestHandler<GetPermissionsTypeByIdQuery, Permiss
         await kafkaProducer.SendMessageAsync(kafkaSettings.Topic, kafkaMessage.Id.ToString(), kafkaMessage.Name);
         var permissionElastic = new PermissionIndexModel
         {
-            Id = Random.Shared.Next(),
+            Id = Guid.NewGuid(),
             TipoRequest = "Get all Info"
         };
 
@@ -49,10 +49,10 @@ public class QueryHandler : IRequestHandler<GetPermissionsTypeByIdQuery, Permiss
         return results;
     }
 
-    public async Task<PermissionType> Handle(GetPermissionsTypeByIdQuery request, CancellationToken cancellationToken)
+    public async Task<PermissionEntity> Handle(GetPermissionByIdQuery request, CancellationToken cancellationToken)
     {
-        var permissionType = await _unitOfWork.Permissions.GetPermissionTypeByIdAsync(request.Id);
-        return _mapper.Map<PermissionType>(permissionType);
+        var permissionType = await _unitOfWork.Permissions.GetPermissionByIdWithTypes(request.Id);
+        return _mapper.Map<PermissionEntity>(permissionType);
     }
 }
 

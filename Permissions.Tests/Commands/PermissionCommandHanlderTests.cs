@@ -74,7 +74,7 @@ public class PermissionCommandHanlderTests
         {
             NombreEmpleado = "Juan",
             ApellidoEmpleado = "Perez",
-            TipoPermiso = 2
+            TipoPermiso = Guid.NewGuid(),
         };
 
         // Act
@@ -93,14 +93,14 @@ public class PermissionCommandHanlderTests
         // Arrange: Simular un permiso existente
         var existingPermission = new PermissionEntity
         {
-            Id = 1,
+            Id = Guid.NewGuid(),
             NombreEmpleado = "Juan",
             ApellidoEmpleado = "Perez",
-            TipoPermiso = 2,
+            TipoPermiso = Guid.NewGuid(),
             FechaPermiso = DateTime.Now.AddDays(-1)
         };
 
-        permissionsRepoMock.Setup(p => p.GetById(It.IsAny<int>()))
+        permissionsRepoMock.Setup(p => p.GetById(It.IsAny<Guid>()))
             .ReturnsAsync(existingPermission);
 
         permissionsRepoMock.Setup(p => p.Update(It.IsAny<PermissionEntity>()));
@@ -115,17 +115,17 @@ public class PermissionCommandHanlderTests
         // Crear un comando de prueba para la actualización
         var command = new ModifyPermissionCommand
         {
-            Id = 1,
+            Id = Guid.NewGuid(),
             NombreEmpleado = "Juan Updated",
             ApellidoEmpleado = "Perez Updated",
-            TipoPermiso = 2
+            TipoPermiso = Guid.NewGuid()
         };
 
         // Act
         await handler.Handle(command);
 
         // Assert: Verificar que las llamadas correctas fueron hechas
-        permissionsRepoMock.Verify(p => p.GetById(It.IsAny<int>()), Times.Once);
+        permissionsRepoMock.Verify(p => p.GetById(It.IsAny<Guid>()), Times.Once);
         permissionsRepoMock.Verify(p => p.Update(It.IsAny<PermissionEntity>()), Times.Once);
         unitOfWorkMock.Verify(u => u.CompleteAsync(), Times.Once); 
         elasticsearchServicesMock.Verify(x => x.IndexPermissionAsync(It.IsAny<PermissionIndexModel>()), Times.Once);  

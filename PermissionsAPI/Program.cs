@@ -57,15 +57,18 @@ builder.Services.AddScoped<CommandHandler>();
 
 // Queries
 builder.Services.AddScoped<QueryHandler>();
+builder.Services.AddScoped<GetPermissionTypeByIdQueryHandler>();
 
 // UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // MediatR
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(QueryHandler).Assembly));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetPermissionTypeByIdQueryHandler).Assembly));
 
 // AutoMapper
 builder.Services.AddAutoMapper(typeof(PermissionType));
+builder.Services.AddAutoMapper(typeof(PermissionEntity));
 
 // Allows CORS origins
 builder.Services.AddCors(option =>

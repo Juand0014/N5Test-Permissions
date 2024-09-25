@@ -51,8 +51,8 @@ public class PermissionsQueryHandlerTestes
         // Simular un permiso existente en el repositorio
         var permissionsList = new List<PermissionEntity>
         {
-            new PermissionEntity { Id = 1, NombreEmpleado = "Juan", ApellidoEmpleado = "Perez", TipoPermiso = 2, FechaPermiso = DateTime.Now.AddDays(-1) },
-            new PermissionEntity { Id = 2, NombreEmpleado = "Maria", ApellidoEmpleado = "Gomez", TipoPermiso = 3, FechaPermiso = DateTime.Now }
+            new PermissionEntity { Id = Guid.NewGuid(), NombreEmpleado = "Juan", ApellidoEmpleado = "Perez", TipoPermiso = Guid.NewGuid(), FechaPermiso = DateTime.Now.AddDays(-1) },
+            new PermissionEntity { Id = Guid.NewGuid(), NombreEmpleado = "Maria", ApellidoEmpleado = "Gomez", TipoPermiso = Guid.NewGuid(), FechaPermiso = DateTime.Now }
         };
 
         unitOfWorkMock.Setup(u => u.Permissions).Returns(permissionRepoMock.Object);

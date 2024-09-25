@@ -1,6 +1,5 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Nest;
 using PermissionsAPI.Common;
@@ -15,7 +14,6 @@ using PermissionsAPI.Kafka.Interfaces;
 using PermissionsAPI.Models;
 using System;
 using System.Threading.Tasks;
-using Xunit.Sdk;
 
 namespace PermissionsAPI.CQRS.Commands;
 
@@ -36,16 +34,24 @@ public class CommandHandler
         this.mediator = mediator;
     }
 
-    public async Task Handle(AddPermissionCommand command)
+    public async Task<string> Handle(AddPermissionCommand command)
     {
+        var permissionType = new PermissionType
+        {
+            Id = Guid.NewGuid(),
+            Description = command.PermissionType.Description
+        };
+
         var permission = new PermissionEntity
         {
+            Id = Guid.NewGuid(),
             NombreEmpleado = command.NombreEmpleado,
             ApellidoEmpleado = command.ApellidoEmpleado,
-            TipoPermiso = command.TipoPermiso,
+            TipoPermiso = command.TipoPermiso ?? null,
             FechaPermiso = command.FechaPermiso,
-            PermissionType = command.PermissionType,
+            PermissionType = permissionType,
         };
+
 
         var permissionElastic = new PermissionIndexModel
         {
@@ -53,16 +59,24 @@ public class CommandHandler
             TipoRequest = "Requested",
             NombreEmpleado = permission.NombreEmpleado,
             ApellidoEmpleado = permission.ApellidoEmpleado,
-            TipoPermiso = permission.TipoPermiso,
+            TipoPermiso = permission.TipoPermiso ?? null,
             FechaPermiso = DateTime.Now,
-            PermissionType = permission.PermissionType,
+            PermissionType = permission.PermissionType
         };
 
-        var query = new GetPermissionsTypeByIdQuery((int)permission.TipoPermiso);
-        var result = await mediator.Send(query);
+        var noPermission = permission.TipoPermiso.HasValue & permission.PermissionType == null;
+        if (noPermission)
+            throw new NotFoundException("No found pemission type in the request");
 
-        if (result == null)
-           throw new NotFoundException($"No found pemission type with id: {permission.TipoPermiso}");
+        var hasPermissiosType = permission.TipoPermiso.HasValue;
+        if (hasPermissiosType)
+        {
+            var query = new GetPermissionsTypeByIdQuery((Guid)permission.TipoPermiso);
+            var result = await mediator.Send(query);
+
+            if (result == null)
+               throw new NotFoundException($"No found pemission type with id: {permission.TipoPermiso}");
+        }
 
         await _unitOfWork.Permissions.Add(permission);
         await _unitOfWork.CompleteAsync();
@@ -71,44 +85,61 @@ public class CommandHandler
 
         var kafkaMessage = new KafkaMessageDTO(AppConstant.REQUESTPERMISSION);
         await kafkaProducer.SendMessageAsync(kafkaSettings.Topic, kafkaMessage.Id.ToString(), kafkaMessage.Name);
+
+        return permission.Id.ToString();
     }
 
-    public async Task Handle(ModifyPermissionCommand command)
+    public async Task<PermissionEntity> Handle(ModifyPermissionCommand command)
     {
-        var permission = await _unitOfWork.Permissions.GetById(command.Id);
-        if (permission != null)
+        var permission = await _unitOfWork.Permissions.GetById((Guid)command.Id);
+
+        if (permission == null)
+            throw new NotFoundException($"Not found Permission with Id: {command.Id}");
+
+        permission.Id = (Guid)command.Id;
+        permission.NombreEmpleado = command.NombreEmpleado;
+        permission.ApellidoEmpleado = command.ApellidoEmpleado;
+        permission.TipoPermiso = command.TipoPermiso;
+        permission.FechaPermiso = command.FechaPermiso;
+        permission.PermissionType = command.PermissionType;
+
+        var permissionElastic = new PermissionIndexModel
         {
-            permission.NombreEmpleado = command.NombreEmpleado;
-            permission.ApellidoEmpleado = command.ApellidoEmpleado;
-            permission.TipoPermiso = command.TipoPermiso;
-            permission.FechaPermiso = command.FechaPermiso;
-            permission.PermissionType = command.PermissionType;
+            Id = (Guid)command.Id,
+            TipoRequest = "Modified",
+            NombreEmpleado = permission.NombreEmpleado,
+            ApellidoEmpleado = permission.ApellidoEmpleado,
+            TipoPermiso = permission.TipoPermiso,
+            FechaPermiso = permission.FechaPermiso,
+            PermissionType = command.PermissionType,
+        };
 
-            var permissionElastic = new PermissionIndexModel
+        try
+        {
+            if (permission.TipoPermiso.HasValue)
             {
-                Id = command.Id,
-                TipoRequest = "Modified",
-                NombreEmpleado = permission.NombreEmpleado,
-                ApellidoEmpleado = permission.ApellidoEmpleado,
-                TipoPermiso = permission.TipoPermiso,
-                FechaPermiso = permission.FechaPermiso,
-                PermissionType = permission.PermissionType,
-            };
-
-            try
-            {
-                _unitOfWork.Permissions.Update(permission);
-                await _unitOfWork.CompleteAsync();
-
-                await elasticsearchService.IndexPermissionAsync(permissionElastic);
-
-                var kafkaMessage = new KafkaMessageDTO(AppConstant.MODIFYPERMISSION);
-                await kafkaProducer.SendMessageAsync(kafkaSettings.Topic, kafkaMessage.Id.ToString(), kafkaMessage.Name);
+                var result = await mediator.Send(new GetPermissionsTypeByIdQuery((Guid)permission.TipoPermiso))
+                    ?? throw new NotFoundException($"No found pemission type with id: {permission.TipoPermiso}");
             }
-            catch (Exception ex)
+            
+            if(permission.PermissionType != null)
             {
-                throw new Exception(ex.Message, ex);
+                _unitOfWork.PermissionTypes.Update(permission.PermissionType);
             }
+
+            _unitOfWork.Permissions.Update(permission);
+            await _unitOfWork.CompleteAsync();
+
+            await elasticsearchService.IndexPermissionAsync(permissionElastic);
+
+            var kafkaMessage = new KafkaMessageDTO(AppConstant.MODIFYPERMISSION);
+            await kafkaProducer.SendMessageAsync(kafkaSettings.Topic, kafkaMessage.Id.ToString(), kafkaMessage.Name);
+
+            return permission;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message, ex);
         }
     }
 }

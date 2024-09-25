@@ -24,23 +24,21 @@ namespace PermissionsAPI.Migrations
 
             modelBuilder.Entity("PermissionsAPI.Models.PermissionEntity", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ApellidoEmpleado")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaPermiso")
+                    b.Property<DateTime?>("FechaPermiso")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NombreEmpleado")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TipoPermiso")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("TipoPermiso")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -51,11 +49,9 @@ namespace PermissionsAPI.Migrations
 
             modelBuilder.Entity("PermissionsAPI.Models.PermissionType", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -69,9 +65,7 @@ namespace PermissionsAPI.Migrations
                 {
                     b.HasOne("PermissionsAPI.Models.PermissionType", "PermissionType")
                         .WithMany()
-                        .HasForeignKey("TipoPermiso")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TipoPermiso");
 
                     b.Navigation("PermissionType");
                 });
